@@ -1,0 +1,13 @@
+import numpy as np
+arr = np.array([1,2,3,4,5,6,7,8]).reshape((2,4))
+arr2 = np.array([1,2,3,4,5,6,7,8]).reshape((2,4))
+# print(arr.flatten())
+# print(arr.ravel(order="F"))
+print(arr.transpose())
+print(arr.T)
+print(np.concatenate((arr,arr2),axis=1))
+print(np.vstack((arr,arr2)))
+print(np.hstack((arr,arr2)))
+sp= np.split(arr,2)
+print(sp)
+print(sp[0])
