@@ -1,0 +1,10 @@
+import numpy as np
+arr = np.random.randint(1,100,size=(2,10))
+arr2 = arr.reshape((4,5))
+arr2 = arr.reshape((2,10))
+print(arr2)
+print(arr.flatten())
+print(np.vstack((arr,arr2)))
+print(np.hstack((arr,arr2)))
+sp = np.split(arr,10)
+print(sp)
